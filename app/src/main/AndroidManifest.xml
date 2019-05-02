@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.github.moko256.b27s">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+            android:name=".GlobalApp"
+            android:allowBackup="false"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name">
+
+        <activity android:name=".shortlink.ShortLinkOpenActivity"
+                  android:theme="@style/Theme_ShortLinkOpenActivity"
+                  android:noHistory="true"
+                  android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:pathPattern="/.*"/>
+
+                <data android:host="t.co"/>
+                <data android:host="pic.twitter.com"/>
+                <data android:host="bit.ly"/>
+
+            </intent-filter>
+        </activity>
+
+    </application>
+
+
+</manifest>
