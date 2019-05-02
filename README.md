@@ -9,4 +9,4 @@ b27s = ぼくのかんがえたさいきょうのツール群 (bokunokanngaetasa
   * bit.ly
 
 # License
-[Blue Oak License 1.0.0](https://blueoakcouncil.org/license/1.0.0)
+[Blue Oak Model License](LICENSE.md)
