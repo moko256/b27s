@@ -12,6 +12,7 @@
 
         <activity android:name=".shortlink.ShortLinkOpenActivity"
                   android:theme="@style/Theme_ShortLinkOpenActivity"
+                  android:excludeFromRecents="true"
                   android:noHistory="true"
                   android:stateNotNeeded="true">
             <intent-filter>
